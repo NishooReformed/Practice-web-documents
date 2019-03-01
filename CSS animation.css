@@ -2,6 +2,21 @@
 /* .drop {
     position: relative;
 } */
+body {
+    font-family: Laila;
+    background: #101C28;
+    padding: 10px;
+    border-width: 0px 2px;
+    border-color: aliceblue;
+    border-style: solid;
+}
+.main-heading {
+    color: #ADC4D6;
+    background-color: #222F3F;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
 .triangle {
     height: 0px;
     width: 0px; 
@@ -24,5 +39,6 @@
 #sample-text {
     text-align: center;
     font-family: Laila, Srisakdi;
-    font-size: 150%
+    font-size: 150%;
+    color: #E8F1F8;
 }
