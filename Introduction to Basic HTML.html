@@ -7,6 +7,7 @@
     <title>Basic HTML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Basic CSS.css">
+    <link rel="stylesheet" href="Applied visual design.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <!-- <script src="main.js"></script> -->
@@ -19,33 +20,36 @@
     
     <!--<p>This is an HTML comment</p>-->
     <a target="_top" href="https://courses.lumenlearning.com/boundless-chemistry/chapter/the-structure-of-the-atom/">
-        <img src="http://www.whoinventedfirst.com/wp-content/uploads/2017/01/atom.jpg" alt="An image of atom">
+        <img src="http://www.whoinventedfirst.com/wp-content/uploads/2017/01/atom.jpg" alt="An image of atom" class="atom-image">
     </a>
-    
+    <img src="Items/Nishoo Reformed.png" id="logo-top">
     
     <p id="external-wikipedia"><a target="_blank" href="https://en.wikipedia.org/wiki/Atom" class="link">Learn about atoms more on Wikipedia</a></p>
     <p class="about-atom">An atom is the smallest constituent unit of ordinary <a href="https://en.wikipedia.org/wiki/Matter">matter</a> that has the properties of a chemical element. 
         Every solid, liquid, gas, and plasma is composed of neutral or <a href="#">ionized</a> atoms. Atoms are extremely small; 
-        typical sizes are around 100 picometers (a ten-billionth of a meter, in the short scale).</p>
-    <p>
-        The atom consist of following three particles:
-        <ul>
-            <li>Proton</li>
-            <li>Electron</li>
-            <li>Neutron</li>
-        </ul>
-    </p>
-    <p>
-        Atom's particle's mass in order -
-        <ol style="color:rgb(252, 128, 178)">
-            <li>Neutron</li>
-            <li>Proton</li>
-            <li>Electron</li>
-        </ol>
-    </p>
-   
+        typical sizes are around <s>100 micrometers</s> <u>100 picometers</u> (a ten-billionth of a meter, in the short scale).</p>
+    <section id="float-left">
+        <p>
+            The atom consist of following three particles:
+            <ul>
+                <li>Proton</li>
+                <li>Electron</li>
+                <li>Neutron</li>
+            </ul>
+        </p>
+    </section>
+    <section id="float-right">
+        <p>
+            Atom's particle's mass in order -
+            <ol style="color:rgb(252, 128, 178)">
+                <li>Neutron</li>
+                <li>Proton</li>
+                <li>Electron</li>
+            </ol>
+        </p>
+    </section>
     
-    <div>
+    <div id="form">
         <p>What are your views on atom? Type below and submit <strong>(Your views will not be submitted because the website isn't functional yet)</strong></p>
         <p>
             <form action="/submit-atom-views">
@@ -53,8 +57,8 @@
             </form>
         </p>
     </div>
-
-    <div>
+    <hr>
+    <div id="question-and-fun">
         <h4 id="question-time">Questions Time</h4>
         <p>
             Which of the following has more mass: 
@@ -63,7 +67,7 @@
             <label><input type="radio" name="mass-question" >Neutron</label>
         </p>
         <p class="isotope">
-            What of the following are the isotopes of carbon: 
+            What of the following are the <em>isotopes of carbon</em>: 
             <label for="option-1">
                 <input type="checkbox" name="isotope-question" id="option-1">
                 <sup>14</sup>C<sub>6</sub>
@@ -77,16 +81,18 @@
                 <sup>16</sup>C<sub>6</sub>
             </label>
         </p>
+    
+        <p>
+            This is fun time :)
+        </p>
+        
+        RGB value - <div class="rgb-value"></div>
+        HEX value - <div class="hex-value"></div>
+        Abbreviated HEX value - <div class="abr-hex-value"></div>
+        RGBA value ('A' stands for alpha) - <div class="rgba-value"></div>
+        
+        <img src="Items/Nishoo Reformed.png" id="logo-bottom">
     </div>
-    <p>
-        This is fun time :)
-    </p>
-    
-    RGB value - <div class="rgb-value"></div>
-    HEX value - <div class="hex-value"></div>
-    Abbreviated HEX value - <div class="abr-hex-value"></div>
-    RGBA value ('A' stands for alpha) - <div class="rgba-value"></div>
-    
     <p><a href="#page-start" class="link">Move to top of the page</a></p>
 </body>
 </html>
