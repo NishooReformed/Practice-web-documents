@@ -1,0 +1,63 @@
+#graphic2 {
+    position: absolute;
+    /* border: 1px solid #000; */
+    left: 50%;
+    top: 30px;
+    padding: 0px 20px;
+    margin-left: -233.15px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+#cursor {
+    position: absolute;
+    height: 124px;
+    width: 3px;
+    background-color: rgb(66, 66, 66);
+    left: 13.5%;
+    top: 129px;
+    animation-name: cursor;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: ;
+    animation-duration: 4s;
+}
+#graphic2::after {
+    content: "";
+    position: absolute;
+    width: 508.31px;
+    height: 124px;
+    bottom: -1.5px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    animation-name: mask;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: ;
+} 
+
+@keyframes cursor {
+    0% {
+        height: 0px;
+    }
+    10% {
+        height: 124px;
+    }
+    15% {
+        left: 13.5%
+    }
+    100%{
+        left:92%
+    }
+}
+
+@keyframes mask {
+    15% {
+        width: 508.31px;
+    }
+    100% {
+        width: 0px;
+    }
+}
+

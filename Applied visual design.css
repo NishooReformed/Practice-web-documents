@@ -1,0 +1,199 @@
+h1 {
+    z-index: 1;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    color: rgb(250, 255, 232);
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -8px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+
+/* Trying position fixed property */
+#logo-top {
+    z-index: 1;
+    position: fixed;
+    top: 10px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+
+
+#float-left {
+    float: left;
+    width: 50%;
+}
+#float-right {
+    float: right;
+    width: 50%;
+}
+
+
+
+/* Transforming the image into a block level element and then adding margin to center the image */
+[alt="An image of atom"] {
+    box-shadow: 0px 10px 20px rgb(10, 10, 10), 0px 10px 20px rgba(10, 10, 10, 0.479);
+    display: block;
+    margin:auto;
+}
+
+
+[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.438);
+}
+
+
+.about-atom {
+    transform: skewX(-3deg);
+}
+
+
+#question-time {
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+
+/* Trying the line height property */
+#fun-time {
+    line-height: 4px;
+}
+
+
+/* Adding the hover property */
+.link:hover {
+    color:rgb(28, 80, 110);    
+}
+
+
+/* Adding relative position and using left offset to shift the element left by 10px. 
+After setting position property of an element to relative and after that all the property 
+that will work relative to other elements */
+[type="submit"] {
+    position: relative;
+    left: 10px;
+}
+
+
+/* Trying the position absolute on the logo on an image inserted from computer */
+#logo-bottom {
+    width: 60px;
+    position: absolute;
+    right: 0px;
+    transform: skewY(-2deg);
+}
+
+
+#stage {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* #graphic-1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    bottom: 400px;
+    left: 10px;
+    border-style: double;
+    border-width: 30px;
+    border-color: white;
+    box-shadow: 0px 0px 0px 10px rgb(0, 0, 0);
+    animation-name: first-animation;
+    animation-duration: 10s;
+} */
+/* Uncomment this to see a animation which changes the color  */
+@keyframes first-animation {
+    0% {
+        /* background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 0px 10px rgb(0, 0, 0); */
+        top: ;
+        bottom:550px ;
+        left: 100px;
+        right: ;
+    }
+    10% {
+        top: ;
+        bottom: ;
+        left: ;
+        right: ;
+    }
+    20%{
+        /* border-color: white; */
+        top: ;
+        bottom:650px ;
+        left: 280px;
+        right: ;
+    }
+    30% {
+        top: ;
+        bottom: ;
+        left: ;
+        right: ;
+    }
+    40% {
+        top: ;
+        bottom:460 ;
+        left: ;
+        right:50px ;
+    }
+    50% {
+        top: ;
+        bottom: ;
+        left: ;
+        right: ;
+    }
+    60%{
+        /* background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px 10px rgb(255, 255, 255); */
+        top: ;
+        bottom: 350px;
+        left: ;
+        right: 200px;
+    }
+    70% {
+        top: ;
+        bottom: ;
+        left: ;
+        right: ;
+    }
+    80% {
+        top: ;
+        bottom: 510px;
+        left: 50%;
+        right: ;
+    }
+    90% {
+        top: ;
+        bottom: ;
+        left: ;
+        right: ;
+    }
+    100%{
+        /* border-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px 10px rgb(255, 255, 255); */
+        transform: rotate(1800deg);
+    }
+}
+
+
+#graphic-1:hover {
+    animation-name:circle;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes circle {
+    100% {
+        border-radius: 50%;
+    }
+}

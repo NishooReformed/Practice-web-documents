@@ -1,0 +1,9 @@
+[type="date"] {
+    margin-left: 10px;
+}
+
+
+/* Adding the pseudo class focus will decide what will happen when the focus is brought on the paragraph by pressing the tab key */
+p:focus {
+    background-color: rgb(255, 221, 221);
+}
