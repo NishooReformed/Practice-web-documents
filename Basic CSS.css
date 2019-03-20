@@ -12,7 +12,7 @@ body {
 }
 /* Testing borders */
 img.atom-image {
-    width: 37rem;
+    width: 90%;
     border-radius: 10px;
     border: 2px solid rgb(43, 43, 43);
 }
