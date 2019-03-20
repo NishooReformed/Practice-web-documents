@@ -23,7 +23,7 @@
     animation-name: cursor ;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
-    animation-fill-mode: ;
+    /* animation-fill-mode: ; */
     animation-duration: 4s;
 }
 #graphic2::after {
@@ -41,7 +41,7 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
-    animation-fill-mode: ;
+    /* animation-fill-mode: ; */
 } 
 
 @keyframes cursor {
