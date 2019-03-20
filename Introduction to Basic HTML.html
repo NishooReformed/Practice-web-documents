@@ -1,98 +1,132 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Basic HTML</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Basic CSS.css">
-    <link rel="stylesheet" href="Applied visual design.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-    <!-- <script src="main.js"></script> -->
-</head>
 
-<body id="page-start">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="Basic CSS.css">
+        <link rel="stylesheet" href="Applied visual design.css">
+        <link rel="stylesheet" href="Animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link rel="stylesheet" href="Applied Accessibility.css">
+        <!-- <script src="main.js"></script> -->
+    </head>
+
     
-    <!-- This h1 contains two classes -->
-    <h1 class="Heading main-heading" id="heading-page">Atoms are the fundamental unit of matter</h1>
-    
-    <!--<p>This is an HTML comment</p>-->
-    <a target="_top" href="https://courses.lumenlearning.com/boundless-chemistry/chapter/the-structure-of-the-atom/">
-        <img src="http://www.whoinventedfirst.com/wp-content/uploads/2017/01/atom.jpg" alt="An image of atom" class="atom-image">
-    </a>
-    <img src="Items/Nishoo Reformed.png" id="logo-top">
-    
-    <p id="external-wikipedia"><a target="_blank" href="https://en.wikipedia.org/wiki/Atom" class="link">Learn about atoms more on Wikipedia</a></p>
-    <p class="about-atom">An atom is the smallest constituent unit of ordinary <a href="https://en.wikipedia.org/wiki/Matter">matter</a> that has the properties of a chemical element. 
-        Every solid, liquid, gas, and plasma is composed of neutral or <a href="#">ionized</a> atoms. Atoms are extremely small; 
-        typical sizes are around <s>100 micrometers</s> <u>100 picometers</u> (a ten-billionth of a meter, in the short scale).</p>
-    <section id="float-left">
-        <p>
-            The atom consist of following three particles:
-            <ul>
-                <li>Proton</li>
-                <li>Electron</li>
-                <li>Neutron</li>
-            </ul>
-        </p>
-    </section>
-    <section id="float-right">
-        <p>
-            Atom's particle's mass in order -
-            <ol style="color:rgb(252, 128, 178)">
-                <li>Neutron</li>
-                <li>Proton</li>
-                <li>Electron</li>
-            </ol>
-        </p>
-    </section>
-    
-    <div id="form">
-        <p>What are your views on atom? Type below and submit <strong>(Your views will not be submitted because the website isn't functional yet)</strong></p>
-        <p>
-            <form action="/submit-atom-views">
-                <input type="text" placeholder="Tell me what you learned about atoms!" required> <button type="submit">Submit</button>
-            </form>
-        </p>
-    </div>
-    <hr>
-    <div id="question-and-fun">
-        <h4 id="question-time">Questions Time</h4>
-        <p>
-            Which of the following has more mass: 
-            <label><input type="radio" name="mass-question" >Electron</label>
-            <label><input type="radio" name="mass-question" >Proton</label>
-            <label><input type="radio" name="mass-question" >Neutron</label>
-        </p>
-        <p class="isotope">
-            What of the following are the <em>isotopes of carbon</em>: 
-            <label for="option-1">
-                <input type="checkbox" name="isotope-question" id="option-1">
-                <sup>14</sup>C<sub>6</sub>
-            </label>
-            <label for="option-2">
-                <input type="checkbox" name="isotope-question" id="option-2">
-                <sup>12</sup>C<sub>6</sub>
-            </label>
-            <label for="option-3">
-                <input type="checkbox" name="isotope-question" id="option-3">
-                <sup>16</sup>C<sub>6</sub>
-            </label>
-        </p>
-    
-        <p>
-            This is fun time :)
-        </p>
+    <body id="page-start">
+        <!-- This h1 contains two classes -->
+        <h1 class="Heading main-heading" id="heading-page">Atoms are the fundamental unit of matter</h1>
+
+
+
+        <main><!--<p>This is an HTML comment</p>-->
+            <article>
+                <a target="_top" href="https://courses.lumenlearning.com/boundless-chemistry/chapter/the-structure-of-the-atom/">
+                    <img src="http://www.whoinventedfirst.com/wp-content/uploads/2017/01/atom.jpg" alt="An image of atom" class="atom-image">
+                </a>
+                <img src="Items/Nishoo Reformed.png" id="logo-top" alt="logo">
+                
+                <p id="external-wikipedia"><a target="_blank" href="https://en.wikipedia.org/wiki/Atom" class="link">Learn about atoms more on Wikipedia</a></p>
+                
+                <!-- Adding the tab index to p tag help when we are trying to navigate using the tab key. If we will not add tabindex the pressing the tab key
+                will not bring focus on the paragraph -->
+                <p class="about-atom" tabindex="0">An atom is the smallest constituent unit of ordinary <a href="https://en.wikipedia.org/wiki/Matter">matter</a> that has the properties of a chemical element. 
+                    Every solid, liquid, gas, and plasma is composed of neutral or <a href="#">ionized</a> atoms. Atoms are extremely small; 
+                    typical sizes are around <s>100 micrometers</s> <u>100 picometers</u> (a ten-billionth of a meter, in the short scale).</p>
+            </article>
+
+            <section id="float-left">
+                <p>
+                    The atom consist of following three particles:
+                    <ul>
+                        <li>Proton</li>
+                        <li>Electron</li>
+                        <li>Neutron</li>
+                    </ul>
+                </p>
+            </section>
+            <section id="float-right">
+                <p>
+                    Atom's particle's mass in order -
+                    <ol style="color:rgb(252, 128, 178)">
+                        <li>Neutron</li>
+                        <li>Proton</li>
+                        <li>Electron</li>
+                    </ol>
+                </p>
+            </section>
+            <hr>
+            <div id="form">
+                <p>What are your views on atom? Type below and submit <strong>(Your views will not be submitted because the website isn't functional yet)</strong></p>
+                <p>
+                    <form action="/submit-atom-views">
+                        <input type="text" placeholder="Tell me what you learned about atoms!" required> <button type="submit">Submit</button>
+                    </form>
+                </p>
+                <p>
+                    <strong>Also pick today's date : </strong>
+                    <input type="date" name="date" id="date">
+                </p>
+            </div>
+            <hr>
         
-        RGB value - <div class="rgb-value"></div>
-        HEX value - <div class="hex-value"></div>
-        Abbreviated HEX value - <div class="abr-hex-value"></div>
-        RGBA value ('A' stands for alpha) - <div class="rgba-value"></div>
+            <div id="stage">
+                <div id="graphic-1"></div>
+                <p id="graphic2">Animations</p>
+                <div id="cursor"></div>
+            </div>
         
-        <img src="Items/Nishoo Reformed.png" id="logo-bottom">
-    </div>
-    <p><a href="#page-start" class="link">Move to top of the page</a></p>
-</body>
+            <hr>
+            <div id="question-and-fun">
+                <h4 id="question-time">Questions Time</h4>
+                <form>
+                    Which of the following has more mass: 
+                    <label><input type="radio" name="mass-question" >Electron</label>
+                    <label><input type="radio" name="mass-question" >Proton</label>
+                    <label><input type="radio" name="mass-question" >Neutron</label>
+                </form>
+                <form class="isotope">
+                    <fieldset>
+                        <legend>Which of the following are the <em>isotopes of carbon</em>: </legend>
+                        <label for="option-1">
+                            <input type="checkbox" name="isotope-question" id="option-1">
+                            <sup>14</sup>C<sub>6</sub>
+                        </label>
+                        <label for="option-2">
+                            <input type="checkbox" name="isotope-question" id="option-2">
+                            <sup>12</sup>C<sub>6</sub>
+                        </label>
+
+                        <!-- There is another method to add a radio button with label. This is done by not putting the
+                        input tag not under label but keeping it separate and making the for value
+                        and id value of label and input same -->
+                        <input type="checkbox" name="isotope-question" id="option-3">
+                        <label for="option-3"><sup>16</sup>C<sub>6</sub></label>
+                    </fieldset>
+                </form>
+            
+                <p>
+                    This is fun time :)
+                </p>
+                
+                RGB value - <div class="rgb-value"></div>
+                HEX value - <div class="hex-value"></div>
+                Abbreviated HEX value - <div class="abr-hex-value"></div>
+                RGBA value ('A' stands for alpha) - <div class="rgba-value"></div>
+                
+            </div>
+        </main>
+        
+        
+        <footer>
+            <img src="Items/Nishoo Reformed.png" id="logo-bottom" alt="logo">
+            <p><a href="#page-start" class="link">Move to top of the page</a></p>
+        </footer>
+
+
+    </body>
 </html>
