@@ -7,7 +7,6 @@ particular css selector to change it's value for that selector only. Like it is 
 
 
 body {
-    position: relative;
     color: rgb(39, 39, 39);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -64,7 +63,7 @@ h1 {
     padding: 10px;
 }
 #question-time {
-    margin: 30px 1px -10px 0px;
+    margin: 30px 1px 10px 0px;
 }
 
 
@@ -73,7 +72,7 @@ h1 {
     margin-left: 20px;
 }
 .isotope {
-    margin-top: -8px;
+    margin-top: 20px;
 }
 
 
