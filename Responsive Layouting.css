@@ -2,7 +2,6 @@
     #logo-top {
         display: none;
     }
-
 }
 
 @media (max-width: 639px) {   
@@ -16,6 +15,9 @@
     #float-left.p, #float-right.p {
         text-align: center;
     }
+    .about-atom {
+        margin: 10px;
+    }
 }
 
 @media (max-width: 548px) {
@@ -27,5 +29,31 @@
         margin-right: -162px;
         height: 82px;
     }
-
+    #cursor {
+        height: 82px;
+        margin-left: -162px;
+    }
+    @keyframes mask {
+        15% {
+            width: 324px;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @keyframes cursor {
+        0% {
+            height: 0px;
+        }
+        10% {
+            height: 82px;
+        }
+        15% {
+            left: 50%;
+            margin-left: -162px;
+        }
+        100%{
+            margin-left: 162px;
+        }
+    }
 }
