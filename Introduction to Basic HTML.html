@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
         <link rel="stylesheet" href="Applied Accessibility.css">
         <link rel="stylesheet" href="Responsive Layouting.css">
+        <link rel="stylesheet" href="Flexbox.css">
         <!-- <script src="main.js"></script> -->
     </head>
 
@@ -111,14 +112,16 @@
                 </form>
             
                 <p>
-                    This is fun time :)
+                    This is fun time :) (Done using flex. Can be altered easily)
                 </p>
+                <div id="flex-container">
+
+                    <div class="flex-child">RGB value - <div class="color-value" id="rgb-value"></div></div>
+                    <div class="flex-child">HEX value - <div class="color-value" id="hex-value"></div></div>
+                    <div class="flex-child">Abbreviated HEX value - <div class="color-value" id="abr-hex-value"></div></div>
+                    <div class="flex-child">RGBA value ('A' stands for alpha) - <div class="color-value" id="rgba-value"></div></div>
                 
-                RGB value - <div class="rgb-value"></div>
-                HEX value - <div class="hex-value"></div>
-                Abbreviated HEX value - <div class="abr-hex-value"></div>
-                RGBA value ('A' stands for alpha) - <div class="rgba-value"></div>
-                
+                </div>
             </div>
         </main>
         

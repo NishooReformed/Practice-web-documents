@@ -77,22 +77,22 @@ h1 {
 
 
 /* We can type the class after writing the element to select among similar elements with particular class */
-div.rgb-value {
+div#rgb-value {
     width: 15px;
     height: 15px;
     background-color: rgb(255, 0, 0);
 }
-div.hex-value {
+div#hex-value {
     width: 15px;
     height: 15px;
     background-color: #a26318;
 }
-div.abr-hex-value {
+div#abr-hex-value {
     width: 15px;
     height: 15px;
     background-color: #7c3;
 }
-div.rgba-value {
+div#rgba-value {
     width: 15px;
     height: 15px;
     background-color: rgba(255, 0, 0, 0.7);
