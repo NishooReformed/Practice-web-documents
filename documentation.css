@@ -1,0 +1,62 @@
+html {
+    font-family: 'Open Sans';
+}
+
+
+#heading {
+    position: fixed;
+    left: 0px;
+    width: 215px;
+    height: 10%;
+    text-align: center;
+    line-height: 2px;
+    border-right: 13px solid rgb(189, 189, 189);
+    margin-top: -8px;
+}
+#helen {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 24px;
+}
+#navigation {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 230px;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    text-align: center;
+
+}
+.nav-link {
+    font-size: 18px;
+    line-height: 40px;
+    background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 49%, rgba(238,238,238,1) 100%);
+    margin-right: -1px;
+    display: block;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+.nav-link:hover {
+    background: linear-gradient(180deg, #ff512f, #f09819);
+    color: white;
+}
+
+
+main {
+    margin-left: 250px;
+    font-family: 'Open Sans';
+}
+section {
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+.sec-head {
+    text-align: center;
+    font-size: 30px;
+    line-height: 5px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+}
